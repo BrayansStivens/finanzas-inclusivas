@@ -1,3 +1,4 @@
+//.devcontainer/devcontainer.json
 {
   "name": "Next.js Dev Container",
   "dockerComposeFile": "../docker-compose.dev.yml",
@@ -6,13 +7,16 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/sh"
+        "terminal.integrated.shell.linux": "/bin/sh",
+        "terminal.integrated.defaultProfile.windows": "PowerShell",
+        "terminal.integrated.defaultProfile.osx": "zsh"
       },
       "extensions": [
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
         "imgildev.vscode-next-pack",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "editorconfig.editorconfig"
       ]
     }
   },
