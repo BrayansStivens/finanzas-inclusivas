@@ -1,24 +1,29 @@
-# Etapa 1: Instalar dependencias
-FROM node:20.12.1-alpine AS deps
+# Etapa 1: Dependencias
+FROM node:22.1.0-alpine AS deps
 WORKDIR /app
 COPY package*.json ./
-ARG ENVIRONMENT
-ENV ENVIRONMENT $ENVIRONMENT
 RUN npm install
 
-# Etapa 2: Construir la aplicación
-FROM node:20.12.1-alpine AS builder
+# Etapa 2: Construcción
+FROM node:22.1.0-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN if [ "$ENVIRONMENT" = "production" ]; then npm run build; else echo "Skipping build for development"; fi
+RUN npm run build
 
-# Etapa 3: Ejecutar la aplicación
-FROM node:20.12.1-alpine
+# Etapa 3: Producción
+FROM node:22.1.0-alpine
 WORKDIR /app
+COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./
-COPY --from=builder /app/next.config.mjs ./
-RUN echo "Environment: $ENVIRONMENT"
-CMD if [ "$ENVIRONMENT" = "production" ]; then npm run start; else npm run dev; fi
+
+# Instalar solo dependencias de producción
+RUN npm install --production && npm cache clean --force
+
+# Exponer el puerto 3000
+EXPOSE 3000
+
+# Comando para iniciar la aplicación
+CMD ["npm", "start"]

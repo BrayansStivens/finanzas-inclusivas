@@ -1,0 +1,14 @@
+#docker-compose.dev.yml
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: deps
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+
