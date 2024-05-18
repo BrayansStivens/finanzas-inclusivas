@@ -1,3 +1,6 @@
+
+---
+
 # Fina Mujer
 
 ![Next.js](https://img.shields.io/badge/Next.js-14.2.3-blue.svg)
@@ -19,69 +22,82 @@ git clone https://github.com/tu-usuario/fina_mujer.git
 cd fina_mujer
 ```
 
-### Instalación de Dependencias
+### Opciones para Ejecutar el Proyecto
 
-Para instalar las dependencias, puedes usar npm, yarn, pnpm o bun:
+Tienes varias opciones para ejecutar y desarrollar este proyecto. Puedes elegir la que mejor se adapte a tus necesidades.
 
-```bash
-npm install
-# o
-yarn install
-# o
-pnpm install
-# o
-bun install
-```
+#### Opción 1: Instalación y Ejecución Manual
 
-### Ejecutar el Servidor de Desarrollo
+Puedes instalar las dependencias y ejecutar el servidor de desarrollo manualmente. Para esto, necesitas tener [Node.js](https://nodejs.org/) y [npm](https://www.npmjs.com/) instalados en tu máquina.
 
-Una vez instaladas las dependencias, ejecuta el servidor de desarrollo:
+1. **Instalar Dependencias**:
 
-```bash
-npm run dev
-# o
-yarn dev
-# o
-pnpm dev
-# o
-bun dev
-```
+   ```bash
+   npm install
+   # o
+   yarn install
+   # o
+   pnpm install
+   # o
+   bun install
+   ```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
+2. **Ejecutar el Servidor de Desarrollo**:
 
-Puedes comenzar a editar la página modificando `app/page.tsx`. La página se actualiza automáticamente a medida que editas el archivo.
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   # o
+   pnpm dev
+   # o
+   bun dev
+   ```
 
-Este proyecto usa [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para optimizar y cargar automáticamente Inter, una fuente personalizada de Google.
+   Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
 
-## Usando Docker
+#### Opción 2: Usar Docker
 
-### Construir y Ejecutar el Contenedor Localmente
+Puedes usar Docker para construir y ejecutar el contenedor de desarrollo. Para esto, necesitas tener [Docker](https://www.docker.com/) instalado en tu máquina.
 
-Para construir y ejecutar el contenedor Docker localmente para desarrollo, utiliza los siguientes comandos:
+1. **Construir y Ejecutar el Contenedor Localmente**:
 
-1. **Construir la imagen Docker:**
+   ```bash
+   docker-compose -f docker-compose.dev.yml up --build
+   ```
 
-```bash
-docker-compose -f docker-compose.dev.yml up --build
-```
+   La aplicación será accesible en [http://localhost:3000](http://localhost:3000).
 
-2. **Ejecutar el contenedor Docker:**
+2. **Configuración para Hot Reloading en Docker en Windows**:
 
-El comando anterior también iniciará el contenedor después de construir la imagen. La aplicación será accesible en [http://localhost:3000](http://localhost:3000).
+   Si estás utilizando Docker en Windows y deseas habilitar el hot reloading, agrega las siguientes variables de entorno en `docker-compose.dev.yml`:
 
-### Construir y Ejecutar el Contenedor para Producción
+   ```yaml
+   environment:
+     - CHOKIDAR_USEPOLLING=true
+     - WATCHPACK_POLLING=true
+     - CHOKIDAR_INTERVAL=1000
+   ```
 
-Para construir y ejecutar el contenedor Docker para producción, utiliza los siguientes comandos:
+   Estas configuraciones no son obligatorias, pero se recomiendan si experimentas problemas de detección de cambios de archivos. Esto se debe a cómo Docker maneja las notificaciones de cambio de archivos en los volúmenes montados desde Windows. Usar polling asegura que los cambios en los archivos se detecten de manera confiable, permitiendo que el hot reloading funcione como se espera.
 
-1. **Construir la imagen Docker:**
+3. **Construir y Ejecutar el Contenedor para Producción**:
 
-```bash
-docker-compose -f docker-compose.prod.yml up --build
-```
+   ```bash
+   docker-compose -f docker-compose.prod.yml up --build
+   ```
 
-2. **Ejecutar el contenedor Docker:**
+   La aplicación será accesible en [http://localhost:3000](http://localhost:3000).
 
-El comando anterior también iniciará el contenedor después de construir la imagen. La aplicación será accesible en [http://localhost:3000](http://localhost:3000).
+#### Opción 3: Usar Dev Container en VS Code
+
+Puedes usar un Dev Container para desarrollar el proyecto en un entorno Dockerizado dentro de VS Code. Para esto, necesitas tener [Visual Studio Code](https://code.visualstudio.com/) y la extensión de [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) instaladas.
+
+1. **Abrir el Proyecto en VS Code**.
+2. **Instalar la Extensión de Remote - Containers**.
+3. **Abrir la Paleta de Comandos (`Ctrl+Shift+P`) y Seleccionar `Remote-Containers: Open Folder in Container...`**.
+
+Esto creará y abrirá el contenedor de desarrollo según la configuración especificada en `.devcontainer/devcontainer.json`.
 
 ## Tecnologías Utilizadas
 
@@ -92,3 +108,5 @@ El comando anterior también iniciará el contenedor después de construir la im
 - ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) [Node.js](https://nodejs.org/) - Entorno de ejecución para JavaScript.
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) [TailwindCSS](https://tailwindcss.com/) - Framework de CSS para un desarrollo rápido de interfaces.
 - ![NextUI](https://img.shields.io/badge/NextUI-%233a74df.svg?style=for-the-badge&logo=next.js&logoColor=white) [NextUI](https://nextui.org/) - Biblioteca de componentes UI para aplicaciones Next.js.
+
+---

@@ -1,13 +1,11 @@
 # Etapa 1: Dependencias
-FROM node:22-alpine AS deps
+FROM node:20-alpine AS deps
 WORKDIR /app
 COPY package*.json ./
-
-RUN apk update && apk upgrade && \
-  apk add --no-cache git openssh  && npm install
+RUN apk update && apk upgrade && apk add --no-cache git openssh && npm install
 
 # Etapa 2: Construcción
-FROM node:22-alpine AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -23,9 +21,14 @@ COPY --from=builder /app/node_modules ./node_modules
 
 # Cambiar permisos y propietario de los archivos y directorios
 RUN chown -R node:node /app
+RUN chmod -R 755 /app
 
-# Instalar solo dependencias de producción
+# Cambiar al usuario node
 USER node
+
+# Verificar los permisos
+RUN whoami && ls -l /app
+
 RUN npm install --production && npm cache clean --force
 
 # Exponer el puerto 3000
