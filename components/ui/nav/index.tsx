@@ -1,9 +1,5 @@
-
-
 function Nav() {
-  return (
-    <div>Nasadav</div>
-  )
+  return <div>Nasadaav</div>;
 }
 
-export default Nav
+export default Nav;

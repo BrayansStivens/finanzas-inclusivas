@@ -1,0 +1,24 @@
+{
+  "name": "Next.js Dev Container",
+  "dockerComposeFile": "../docker-compose.dev.yml",
+  "service": "web",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/sh"
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "imgildev.vscode-next-pack",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "postCreateCommand": "npm install && git config --global --add safe.directory /app",
+  "remoteUser": "root"
+}
