@@ -18,7 +18,7 @@ Este es un proyecto [Next.js](https://nextjs.org/) iniciado con [`create-next-ap
 Primero, clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/fina_mujer.git
+git clone https://github.com/BrayansStivens/fina_mujer.git
 cd fina_mujer
 ```
 
