@@ -10,24 +10,10 @@ const nextConfig = {
     // Configuración personalizada de Webpack
     config.resolve.alias["@Components"] = path.join(__dirname, "components");
 
-    // Añadir regla para manejar el módulo `punycode`
-    config.module.rules.push({
-      test: /punycode/,
-      use: 'null-loader'
-    });
-
-    // Opciones adicionales de optimización y configuración
-    if (!isServer) {
-      config.resolve.fallback = {
-        fs: false,
-        path: false,
-      };
-    }
-
     return config;
   },
   images: {
-    domains: [],
+    domains: ["http://localhost:3000"],
     loader: "default",
   },
   output: 'standalone',
