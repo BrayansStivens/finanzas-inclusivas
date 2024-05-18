@@ -1,0 +1,25 @@
+#.dockerignore
+
+# Node modules
+node_modules
+npm-debug.log
+
+# Docker files
+Dockerfile
+Dockerfile.*
+.dockerignore
+
+# Git files
+.git
+.gitignore
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Next.js build output
+.next
+
+# Logs
+*.log
