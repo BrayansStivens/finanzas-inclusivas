@@ -1,4 +1,93 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* styles/globals.css */
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Bold_Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Light_Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Medium_Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/Gill_Sans_Heavy_Italic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/GillSans_Condensed.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('../public/assets/fonts/GillSans_Condensed_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Gill Sans', sans-serif !important;
+}
+
+/* Asegúrate de que Tailwind CSS sea importado */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
