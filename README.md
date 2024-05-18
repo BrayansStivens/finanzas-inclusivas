@@ -9,8 +9,7 @@
 
 Este es un proyecto [Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Logo de Fina Mujer](./public/assets/logo/fina_mujer_logo.png)  <!-- Asegúrate de reemplazar este comentario con la ruta real de tu logo -->
-
+![Logo de Fina Mujer](https://i.postimg.cc/PrW4SmSP/Frame.png)  
 ## Comenzando
 
 ### Clonar el Repositorio
