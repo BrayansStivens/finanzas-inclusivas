@@ -27,5 +27,5 @@ function HomeCard({ src, alt, text, width, height, isSelected, onClick }: any) {
     </div>
   );
 }
-
+//
 export default HomeCard;
