@@ -10,7 +10,7 @@ function Nav() {
         <div className="pt-5 pb-3 px-5 flex items-center md:justify-between justify-center">
           <Image
             className="hidden md:block"
-            src="/assets/logo/fina_mujer_logo.svg"
+            src="/assets/logo/fina_mujer_logo.png"
             alt="logo fina mujer"
             width={250}
             height={75}
