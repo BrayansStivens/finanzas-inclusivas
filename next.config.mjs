@@ -13,7 +13,14 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ["http://localhost:3000"],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3000',
+        pathname: '**',
+      },
+    ],
     loader: "default",
   },
   output: 'standalone',

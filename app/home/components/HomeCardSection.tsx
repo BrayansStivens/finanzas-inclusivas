@@ -1,20 +1,19 @@
 "use client";
+
+import { useRouter } from "next/navigation";
 import HomeCard from "./HomeCard";
 import { useState } from "react";
 
 function HomeCardSection({ cards }: any) {
+  const router = useRouter();
   const [selectedCard, setSelectedCard] = useState<number | null>(null);
 
   const handleCardClick = (index: number) => {
     if (selectedCard === index) {
-      console.log(`Deseleccionada la carta: ${cards[index].text}`);
       setSelectedCard(null);
     } else {
-      if (selectedCard !== null) {
-        console.log(`Deseleccionada la carta: ${cards[selectedCard].text}`);
-      }
-      console.log(`Seleccionada la carta: ${cards[index].text}`);
       setSelectedCard(index);
+      router.push(`${cards[index].route}`);
     }
   };
 
