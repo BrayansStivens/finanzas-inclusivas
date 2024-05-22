@@ -1,15 +1,15 @@
 // app/recomendaciones/page.tsx
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import IframeVideoPage from "@/components/ui/IframeVideoPage";
-import PageTitle from "@/components/ui/PageTitle";
+import PageTitle from "@/components/ui/PageTitle/index";
 
 function RecomendacionesPage() {
   return (
     <>
-      <Breadcrumb title="Recomendaciones" />
+      <Breadcrumb title="Enfoque" />
       <main className="flex justify-center px-4 py-5">
         <article id="recomendaciones" className="flex flex-col gap-5 w-full">
-          <PageTitle title={"Recomendaciones para el uso de la herramienta"} />
+          <PageTitle title={"Enfoque de interseccionalidad"} />
           <section
             id="text"
             className="w-full flex flex-col md:flex-row gap-10"
