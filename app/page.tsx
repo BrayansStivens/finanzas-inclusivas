@@ -1,6 +1,5 @@
 "use client";
 
-import SectorCard from "@/components/sectorCard/SectorCard";
 import Image from "next/image";
 
 export default function Home() {
