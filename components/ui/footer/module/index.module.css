@@ -1,0 +1,16 @@
+.underline a {
+    text-decoration: none;
+    position: relative;
+}
+
+.underline a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    width: 91%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
