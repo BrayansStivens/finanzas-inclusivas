@@ -7,8 +7,8 @@ const __dirname = path.dirname(__filename);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config, { isServer }) => {
-    // Configuración personalizada de Webpack
     config.resolve.alias["@Components"] = path.join(__dirname, "components");
+    config.resolve.alias["@Utils"] = path.join(__dirname, "utils");
 
     return config;
   },

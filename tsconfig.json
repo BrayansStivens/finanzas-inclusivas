@@ -22,6 +22,9 @@
       ],
       "@Components/*": [
         "./components/*"
+      ],
+      "@Utils/*": [
+        "./utils/*"
       ]
     },
     "plugins": [

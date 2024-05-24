@@ -44,7 +44,7 @@ function HomeImageSection({ images }: any) {
             >
               <Image
                 src={image.src}
-                alt={image.alt}
+                alt={image.alt ? image.alt : "image"}
                 fill
                 style={{ objectFit: "cover" }}
                 priority

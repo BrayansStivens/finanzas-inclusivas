@@ -10,7 +10,7 @@ function HomeCard({ src, alt, text, width, height, isSelected, onClick }: any) {
     >
       <Image
         src={src}
-        alt={alt}
+        alt={alt ? alt : "image"}
         width={width}
         height={height}
         className={`mb-4 transition duration-300 ease-in-out ${
