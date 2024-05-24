@@ -3,7 +3,7 @@ import PageTitle from "@/components/ui/PageTitle";
 import React from "react";
 
 const ResultSectionBi: React.FC = () => {
-    const powerBiSource = "https://app.powerbi.com/view?r=eyJrIjoiNDc3MGY0NDAtZjM2MS00M2M0LWIxNzQtMzFjMDk0YTIyZDYzIiwidCI6IjYxOGJhYjBmLTIwYTQtNGRlMy1hMTBjLWUyMGNlZTk2YmIzNSIsImMiOjR9&pageName=ReportSection"
+    const powerBiSource = "https://app.powerbi.com/view?r=eyJrIjoiMzQxNGRlNzctYjFlOS00MzNiLTk1MjktZjdiM2RkNzdlY2Y3IiwidCI6IjYxOGJhYjBmLTIwYTQtNGRlMy1hMTBjLWUyMGNlZTk2YmIzNSIsImMiOjR9&pageName=ReportSection"
     return (
         <section className="p-[10px]">
             <PageTitle title="Resultados de la Investigación" />
