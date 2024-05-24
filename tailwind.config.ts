@@ -21,6 +21,9 @@ const config: Config = {
         sans: ["GillSans", "sans-serif"],
         body: ["GillSans", "sans-serif"],
       },
+      screens: {
+        custom: "850px",
+      },
     },
   },
   darkMode: "class",
