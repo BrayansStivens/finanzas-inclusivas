@@ -6,34 +6,10 @@ import ContactInfo from "./components/ContactInfo";
 import SocialMediaIcons from "./components/SocialMediaIcons";
 import { ISocialIcons } from "./interfaces/social-icons.interface";
 import { IContactInfo } from "./interfaces/contact-info.interface";
+import style from "./module/index.module.css";
 
 const Footer: React.FC = () => {
-  const icons: ISocialIcons[] = [
-    {
-      icon: "facebook",
-      link: "#",
-      src: "/assets/icons/facebook.png",
-      alt: "Facebook",
-    },
-    {
-      icon: "instagram",
-      link: "#",
-      src: "/assets/icons/instagram.png",
-      alt: "Instagram",
-    },
-    {
-      icon: "twitter",
-      link: "#",
-      src: "/assets/icons/twitter.png",
-      alt: "Twitter",
-    },
-    {
-      icon: "youtube",
-      link: "#",
-      src: "/assets/icons/youtube.png",
-      alt: "YouTube",
-    },
-  ];
+  const icons: ISocialIcons[] = [];
 
   const contactData: IContactInfo[] = [
     {
@@ -60,12 +36,18 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#0b3d91] text-[white] p-[20px] text-center mt-auto">
-      <div className="max-w-[1200px] mx-auto  flex md:flex-row flex-col justify-center items-center">
+    <footer className="bg-[#102E6A] text-[white] p-[20px] text-center mt-auto">
+      <div className="max-w-[1300px] mx-auto flex md:flex-row flex-col justify-start items-center">
         <div className="w-[90%]">
           <p className="text-left w-[90%] m-[10px] p-[5px]">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy enim ad minim veniam, quis nostrud exerci tation.
+            Para dudas o sugerencias escríbenos
+            <span className={style.underline}>
+              <a href="https://microempresas.co/"> microempresas </a>
+            </span>
+            y
+            <span className={style.underline}>
+              <a href="https://www.upb.edu.co/es/home"> upb </a>
+            </span>
           </p>
           <div>
             <ContactInfo contactData={contactData} />
@@ -75,14 +57,16 @@ const Footer: React.FC = () => {
           <SocialMediaIcons icons={icons} />
         </div>
       </div>
-      <div className="mt-[20px]">
-        <hr className="border-[0] h-px max-w-[1200px] bg-[#cacaca] mt-[0] mx-[auto] mb-[10px]" />
-        <p className="m-0 text-[12px] text-[#cacaca]">
+      <div className="mt-[20px] justify-center max-w-[1300px] mx-[auto]">
+        <p className="m-0 text-[12px] text-left text-[#cacaca] m-3 text-[15px]">
           © Todos los derechos reservados 2024
         </p>
+        <hr className="border-[0] h-px bg-[#cacaca] mt-[0] mb-[10px]" />
       </div>
     </footer>
   );
 };
 
 export default Footer;
+
+
