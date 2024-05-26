@@ -23,15 +23,15 @@ const Footer: React.FC = () => {
       icon: (
         <PiPhoneLight className="bg-[red] text-[40px] m-[10px] p-[5px] rounded-[50px]" />
       ),
-      link: "tel:+576067417700",
+      link: "+57 606 7417700",
       text: "+57 606 7417700",
     },
     {
       icon: (
         <HiOutlineMailOpen className="bg-[red] text-[40px] m-[10px] p-[5px] rounded-[50px]" />
       ),
-      link: "mailto:contactenos@usaid.gov.co",
-      text: "contactenos@usaid.gov.co",
+      link: "mailto:finanzasparatodas@upb.edu.co",
+      text: "finanzasparatodas@upb.edu.co",
     },
   ];
 

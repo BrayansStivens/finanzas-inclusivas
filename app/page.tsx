@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="flex justify-center px-4 py-5">
+      <main className="px-4 py-5">
         <section
           id="identificate"
           className="hidden md:block bg-[url('/assets/images/home_page.webp')] bg-cover bg-botton w-full h-[598px]"
@@ -33,7 +33,14 @@ export default function Home() {
             priority
           />
         </div>
-      </main>
+        <div className="my-5">
+          <h2 className="font-bold text-lg mb-10">El sitio web fue realizado por UPB y Microempresas en asociación con USAID.
+          </h2>
+          <p className="text-left">Este sitio web es posible gracias al apoyo del pueblo estadounidense a través de la Agencia de los Estados Unidos para el desarrollo
+            Internacional (USAID). El contenido de este sitio es responsabilidad exclusiva de UPB y Microempresas y no refleja necesariamente
+            las opiniones de USAID o del gobierno de los Estados Unidos</p>
+        </div>
+      </main >
     </>
   );
 }
