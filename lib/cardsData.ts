@@ -11,7 +11,7 @@ export async function getCardsData() {
     {
       src: "/assets/icons/enfoque.svg",
       alt: "Interseccionalidad",
-      text: "Enfoque de interseccionalidad",
+      text: "¿Qué es el enfoque interseccional y cómo se aplica a la educación financiera?",
       route: "/enfoque",
       width: 75.98,
       height: 65.82,
@@ -19,7 +19,7 @@ export async function getCardsData() {
     {
       src: "/assets/icons/resultados.svg",
       alt: "Resultados",
-      text: "Resultados de la investigación",
+      text: "Resultados de la investigación en la que se basó la herramienta",
       route: "/resultados",
       width: 58.37,
       height: 58.35,
@@ -27,7 +27,7 @@ export async function getCardsData() {
     {
       src: "/assets/icons/perfilamiento.svg",
       alt: "Perfilamiento",
-      text: "Perfilamiento de mujeres",
+      text: "Perfiles de mujeres potenciales beneficiarias de educación financiera",
       route: "/perfilamiento",
       width: 51.11,
       height: 64.16,
@@ -43,7 +43,7 @@ export async function getCardsData() {
     {
       src: "/assets/icons/evaluacion.svg",
       alt: "Evaluación",
-      text: "Instrumento de evaluación",
+      text: "Instrumento para medir la efectividad de la educación financiera",
       route: "/evaluacion",
       width: 70.53,
       height: 42.29,

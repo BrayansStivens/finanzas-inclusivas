@@ -13,6 +13,7 @@ export async function getSectorItemsData() {
       "Comisionista de Bolsa",
       "Bolsa de Valores",
       "Agencia de Seguros",
+      "Sociedad de Capitalización",
     ],
     otherEntities: [
       "ONG",
@@ -21,9 +22,12 @@ export async function getSectorItemsData() {
       "Agencia de cooperación internacional",
       "Organismo unilateral",
       "Empresa de desarrollo internacional",
-      "Investigador",
+      "Investigador (a)",
       "Docente",
       "Estudiante",
+      "Entidad pública del orden nacional",
+      "Entidad pública del orden territorial",
+      "Otros u otras",
     ],
     solidarity: [
       "Asociación mutual",

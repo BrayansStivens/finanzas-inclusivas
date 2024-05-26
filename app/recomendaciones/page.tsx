@@ -12,28 +12,29 @@ function RecomendacionesPage() {
           <PageTitle title={"Recomendaciones para el uso de la herramienta"} />
           <section
             id="text"
-            className="w-full flex flex-col md:flex-row gap-10"
+            className="w-full row-gap-10"
           >
-            <p className="w-full md:w-6/12 text-justify">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at.
+            <p className="w-full text-justify mb-4">
+              El propósito de esta herramienta es proporcionar orientaciones prácticas y sencillas para el diseño y la entrega de programas de
+              educación financiera con enfoque de género y/o diferencial a las diversas entidades del ecosistema financiero en Colombia. En
+              especial, está destinada a aquellas que deseen ofrecer estos servicios a mujeres rurales, víctimas del conflicto armado,
+              afrocolombianas, indígenas y emprendedoras.
             </p>
-            <p className="w-full md:w-6/12 text-justify">
-              Feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer
-              adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-              laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-              veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-              nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-              amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut.
+            <p className="w-full text-justify mb-4">
+              Esta herramienta fue diseñada a partir de un proceso previo de investigación de enfoque mixto, combinando métodos cuantitativos
+              y cualitativos. En la fase cuantitativa, se aplicaron encuestas a 4543 mujeres en 20 municipios de Antioquia y 3 de Caldas, con el
+              objetivo de identificar sus preferencias, expectativas y necesidades en educación financiera. En la fase cualitativa, se realizaron
+              entrevistas con siete instituciones del ecosistema financiero, destacadas por su enfoque de género en educación financiera, con el
+              fin de identificar retos, dificultades y buenas prácticas para la implementación de estos programas. Estos resultados se presentan en
+              el módulo 3: Resultados de la investigación en la que se basó la herramienta.
+            </p>
+            <p className="w-full text-justify mb-4">
+              En el siguiente video, se presentan los pasos para acceder a la herramienta y su funcionamiento:
             </p>
           </section>
-          <IframeVideoPage src="https://www.youtube-nocookie.com/embed/CDH1UEG3nbo?si=77CLKQwOoQf0xJoD" />
+          <div className="mb-4">
+            <IframeVideoPage src="https://www.youtube-nocookie.com/embed/CDH1UEG3nbo?si=77CLKQwOoQf0xJoD" />
+          </div>
         </article>
       </main>
     </>
