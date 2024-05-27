@@ -27,7 +27,7 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
         placeholder="Buscar perfil..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="mb-4 p-4 border-2 border-[#121212] w-full font-semibold text-xl shadow-md focus:outline-none focus:border-[#2a63b1] focus:text-[#2a63b1]"
+        className="mb-4 p-2 border-2 border-[#121212] w-full font-semibold text-xl shadow-md focus:outline-none focus:border-[#2a63b1] focus:text-[#2a63b1]"
       />
       {filteredPerfiles.length === 0 ? (
         <div className="text-center text-gray-500 font-semibold">
@@ -46,7 +46,7 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
               <div className="text-right text-xs md:text-sm font-medium flex items-center">
                 <a
                   href={`/files/${perfil.url}`}
-                  className="text-[#fff] flex items-center justify-center gap-5 bg-[#2a63b1] px-3 py-2 md:px-5 md:py-2 font-semibold text-lg md:text-2xl"
+                  className="text-[#fff] flex items-center justify-center gap-5 bg-[#2a63b1] px-3 py-2 md:px-5 md:py-2 font-semibold text-lg md:text-2xl caret-transparent"
                   download
                 >
                   <Image
@@ -56,7 +56,7 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
                     width={31.81}
                     height={31.81}
                   />
-                  Descargar
+                  <span className="caret-transparent">Descargar</span>
                 </a>
               </div>
             </li>

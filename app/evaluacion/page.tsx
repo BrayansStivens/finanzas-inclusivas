@@ -25,7 +25,7 @@ function Evaluacion() {
           >
             <button
               type="button"
-              className="border-2 border-[#5e2232] text-[#5e2232] px-5 py-2 font-semibold text-2xl"
+              className="border-2 border-[#5e2232] text-[#5e2232] px-5 py-2 font-semibold text-lg md:text-2xl"
             >
               Contenidos sugeridos adicionales
             </button>
