@@ -30,21 +30,21 @@ const AuthSectorCard: React.FC<{ financial: string[], otherEntities: [], solidar
                 a los módulos de la herramienta.</h1>
             <div className='flex flex-wrap mt-[0] mx-[20px] mb-[50px] justify-center gap-[30px]'>
                 <SectorCard
-                    imageSrc="/assets/images/financial_sector.png"
+                    imageSrc="/assets/images/financial_sector.jpg"
                     sectorName="Sector Financiero"
                     toggleOpen={() => toggleOpen('financial')}
                     isOpen={isOpen.financial}
                     items={financial}
                 />
                 <SectorCard
-                    imageSrc="/assets/images/solidarity_sector.png"
+                    imageSrc="/assets/images/solidarity_sector.jpg"
                     sectorName="Sector Solidario"
                     isOpen={isOpen.solidarity}
                     toggleOpen={() => toggleOpen('solidarity')}
                     items={otherEntities}
                 />
                 <SectorCard
-                    imageSrc="/assets/images/other_entities.png"
+                    imageSrc="/assets/images/other_entities.webp"
                     sectorName="Otras Entidades"
                     isOpen={isOpen.otherEntities}
                     toggleOpen={() => toggleOpen('otherEntities')}

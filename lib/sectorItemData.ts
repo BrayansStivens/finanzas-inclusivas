@@ -15,7 +15,7 @@ export async function getSectorItemsData() {
       "Agencia de Seguros",
       "Sociedad de Capitalización",
     ],
-    otherEntities: [
+    solidarity: [
       "ONG",
       "Empresa social",
       "Fintech",
@@ -29,7 +29,7 @@ export async function getSectorItemsData() {
       "Entidad pública del orden territorial",
       "Otros u otras",
     ],
-    solidarity: [
+    otherEntities: [
       "Asociación mutual",
       "Fondo de empleado",
       "Cooperativas de ahorro y crédito",
