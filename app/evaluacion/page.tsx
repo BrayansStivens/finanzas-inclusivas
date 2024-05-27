@@ -10,13 +10,11 @@ function Evaluacion() {
           <PageTitle title={"Instrumento de evaluación"} />
           <section id="content" className="w-full">
             <p className="text-justify">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in
-              vulputate velit esse molestie consequat, vel illum dolore eu
-              feugiat nulla facilisis at.
+              En este módulo, podrá descargar la herramienta integral que
+              permitirá evaluar los cambios en comportamientos, conocimientos,
+              actitudes y habilidades de las mujeres que participen en los
+              programas de educación financiera con enfoque de género y
+              diferencial.
             </p>
           </section>
           <section
@@ -27,7 +25,7 @@ function Evaluacion() {
               type="button"
               className="border-2 border-[#5e2232] text-[#5e2232] px-5 py-2 font-semibold text-lg md:text-2xl"
             >
-              Contenidos sugeridos adicionales
+              Descarga del instrumento
             </button>
           </section>
         </article>

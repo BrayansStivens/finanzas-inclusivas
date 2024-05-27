@@ -14,7 +14,6 @@ function Nav() {
   };
 
   useEffect(() => {
-    console.log(pathname);
     if (pathname === "/") setShowAuthButton(true);
     else setShowAuthButton(false);
   }, [pathname]);

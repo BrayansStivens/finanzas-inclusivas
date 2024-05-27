@@ -12,6 +12,8 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPerfiles, setFilteredPerfiles] = useState(perfiles);
 
+  const handleDownload = () => {};
+
   useEffect(() => {
     if (searchTerm.trim() === "") {
       setFilteredPerfiles(perfiles);
@@ -45,9 +47,12 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
               </div>
               <div className="text-right text-xs md:text-sm font-medium flex items-center">
                 <a
-                  href={`/files/${perfil.url}`}
+                  href={`${perfil.url}`}
                   className="text-[#fff] flex items-center justify-center gap-5 bg-[#2a63b1] px-3 py-2 md:px-5 md:py-2 font-semibold text-lg md:text-2xl caret-transparent"
                   download
+                  target="_blank"
+                  rel="nofollow"
+                  onClick={handleDownload}
                 >
                   <Image
                     className="w-auto h-auto"
