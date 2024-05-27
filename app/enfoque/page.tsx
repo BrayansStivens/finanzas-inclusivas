@@ -19,11 +19,14 @@ function RecomendacionesPage() {
             className="w-full"
           >
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <p className="w-full text-justify">
               ¿Qué es el enfoque interseccional, cómo surgió y por qué es importante considerarlo en el diseño y entrega de programas de
               educación financiera con enfoque de género y diferencial? ¿Qué variables del enfoque interseccional se tomaron en cuenta en la
               herramienta? En el siguiente video proporcionaremos un contexto detallado.
 =======
+=======
+>>>>>>> Stashed changes
             <p className="w-full text-justify font-medium text-lg md:text-xl">
               ¿Qué es el enfoque interseccional, cómo surgió y por qué es
               importante considerarlo en el diseño y entrega de programas de
@@ -31,6 +34,9 @@ function RecomendacionesPage() {
               variables del enfoque interseccional se tomaron en cuenta en la
               herramienta? En el siguiente video proporcionaremos un contexto
               detallado.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             </p>
           </section>

@@ -6,7 +6,11 @@ export default function Home() {
   return (
     <>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <main className="px-4 py-5">
+=======
+      <main className="flex flex-col justify-center px-4 py-5">
+>>>>>>> Stashed changes
 =======
       <main className="flex flex-col justify-center px-4 py-5">
 >>>>>>> Stashed changes
@@ -25,6 +29,7 @@ export default function Home() {
           />
         </div>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <div className="my-5">
           <h2 className="font-bold text-lg mb-10">Esta herramienta digital de código abierto, diseñada para ofrecer orientaciones prácticas y sencillas en el diseño y la
             implementación de programas de educación financiera con enfoque de género y/o diferencial, ha sido desarrollada por
@@ -36,6 +41,8 @@ export default function Home() {
         </div>
       </main >
 =======
+=======
+>>>>>>> Stashed changes
         <section id="content" className="mt-5">
           <h5 className="text-lg md:text-xl italic font-semibold">
             El sitio web fue realizado por UPB y Microempresas en asociación con
