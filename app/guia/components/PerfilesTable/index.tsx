@@ -26,7 +26,7 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
   const saveConsulta = async (data: any) => {
     const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
     try {
-      const response = await fetch(`${API_BASE_URL}/api/saveConsulta`, {
+      const response = await fetch(`${API_BASE_URL}/api/consultas`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
