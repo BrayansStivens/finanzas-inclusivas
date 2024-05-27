@@ -12,7 +12,38 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPerfiles, setFilteredPerfiles] = useState(perfiles);
 
-  const handleDownload = () => {};
+  const handleDownload = (perfil: any) => {
+    const dataString = localStorage.getItem("data") || "{}";
+    const dataObject = JSON.parse(dataString as string);
+    dataObject.perfil_descargado = perfil.name;
+    dataObject.fecha_descarga_perfil = new Date().getTime();
+
+    const dataConsultas = { ...dataObject };
+    console.log(dataConsultas);
+    saveConsulta(dataConsultas);
+  };
+
+  const saveConsulta = async (data: any) => {
+    const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/consultas`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Error saving consulta");
+      }
+
+      const result = await response.json();
+      console.log("Consulta saved successfully:", result);
+    } catch (error) {
+      console.error("Error saving consulta:", error);
+    }
+  };
 
   useEffect(() => {
     if (searchTerm.trim() === "") {
@@ -52,7 +83,9 @@ function PerfilesTable({ perfiles }: PerfilesTableProps) {
                   download
                   target="_blank"
                   rel="nofollow"
-                  onClick={handleDownload}
+                  onClick={() => {
+                    handleDownload(perfil);
+                  }}
                 >
                   <Image
                     className="w-auto h-auto"

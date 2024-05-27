@@ -1,8 +1,13 @@
 "use client";
 
+import { clearStorage } from "@/utils/handles/handleStorage";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    clearStorage();
+  }, [window]);
   return (
     <>
       <main className="flex flex-col justify-center px-4 py-5">
