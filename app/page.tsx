@@ -29,12 +29,14 @@ export default function Home() {
             alt="Imagen para móviles"
             width={1241}
             height={598}
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", objectPosition: "center" }}
             priority
           />
         </div>
         <div className="my-5">
-          <h2 className="font-bold text-lg mb-10">El sitio web fue realizado por UPB y Microempresas en asociación con USAID.
+          <h2 className="font-bold text-lg mb-10">Esta herramienta digital de código abierto, diseñada para ofrecer orientaciones prácticas y sencillas en el diseño y la
+            implementación de programas de educación financiera con enfoque de género y/o diferencial, ha sido desarrollada por
+            Microempresas de Colombia y la Universidad Pontificia Bolivariana, en colaboración con USAID.
           </h2>
           <p className="text-left">Este sitio web es posible gracias al apoyo del pueblo estadounidense a través de la Agencia de los Estados Unidos para el desarrollo
             Internacional (USAID). El contenido de este sitio es responsabilidad exclusiva de UPB y Microempresas y no refleja necesariamente
