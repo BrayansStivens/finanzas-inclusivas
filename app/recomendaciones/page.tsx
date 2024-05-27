@@ -12,6 +12,7 @@ function RecomendacionesPage() {
           <PageTitle title={"Recomendaciones para el uso de la herramienta"} />
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <section
             id="text"
             className="w-full row-gap-10"
@@ -55,6 +56,18 @@ function RecomendacionesPage() {
               afrocolombianas, indígenas y emprendedoras.
             </p>
 >>>>>>> Stashed changes
+=======
+          <section id="text" className="w-full flex flex-col  gap-5">
+            <p className="w-full text-justify font-medium text-lg md:text-xl">
+              El propósito de esta herramienta es proporcionar orientaciones
+              prácticas y sencillas para el diseño y la entrega de programas de
+              educación financiera con enfoque de género y/o diferencial a las
+              diversas entidades del ecosistema financiero en Colombia. En
+              especial, está destinada a aquellas que deseen ofrecer estos
+              servicios a mujeres rurales, víctimas del conflicto armado,
+              afrocolombianas, indígenas y emprendedoras.
+            </p>
+>>>>>>> Stashed changes
 
             <p className="w-full text-justify font-medium text-lg md:text-xl">
               Esta herramienta fue diseñada a partir de un proceso previo de
@@ -75,6 +88,9 @@ function RecomendacionesPage() {
               En el siguiente video, se presentan los pasos para acceder a la
               herramienta y su funcionamiento:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

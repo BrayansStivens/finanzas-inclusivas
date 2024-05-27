@@ -18,6 +18,7 @@ export default function Home() {
           id="identificate"
           className="hidden md:block bg-[url('/assets/images/home_page.webp')] bg-cover bg-botton w-full h-[598px]"
         ></section>
+        ></section>
         <div className="flex gap-2 flex-col md:hidden w-full h-auto relative">
           <Image
             src="/assets/images/home_page.webp"
