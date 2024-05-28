@@ -1,73 +1,89 @@
 "use client";
 
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import { useMenuState } from "./hooks/useMenuState";
+import AuthButton from "./components/AuthButton";
+import HomeButton from "./components/HomeButton";
+import MobileMenu from "./components/MobileMenu";
 
-function Nav() {
+const Nav: React.FC = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const [showAuthButton, setShowAuthButton] = useState<boolean>(false);
+  const [showAuthButton, setShowAuthButton] = useState(false);
+  const [menuOpen, toggleMenu, setMenuOpen] = useMenuState();
+
+  useEffect(() => {
+    setShowAuthButton(pathname === "/");
+  }, [pathname]);
 
   const handleAuth = () => {
+    setMenuOpen(false);
     router.push("/auth");
   };
 
-  useEffect(() => {
-    if (pathname === "/") setShowAuthButton(true);
-    else setShowAuthButton(false);
-  }, [pathname]);
+  const handleHome = () => {
+    setMenuOpen(false);
+    router.push("/home");
+  };
+
   return (
     <>
-      <header className="bg-[#2a63b1] h-[40px] w-full"></header>
-      <nav>
+      <header className="bg-[#2a63b1] h-[40px] w-full" />
+      <nav className="border-b p-4">
         <div
-          className={`pt-5 pb-3 px-5 flex items-center ${
+          className={`mx-auto flex items-center ${
             showAuthButton ? "justify-between" : "justify-center"
-          }`}
+          } md:justify-between`}
         >
-          <div
-            className={`hidden md:block ${
-              showAuthButton ? "w-6/12" : "w-full"
-            }`}
-          >
-            <Image
-              src="/assets/logo/fina_mujer_logo.png"
-              alt="logo fina mujer"
-              width={250}
-              height={75}
-              priority
-              className="w-auto h-auto"
-            />
-          </div>
-          <div
-            className={`block md:hidden ${
-              showAuthButton ? "w-6/12" : "w-full"
-            }`}
-          >
-            <Image
-              src="/assets/logo/icon.svg"
-              alt="icono para móviles"
-              width={65}
-              height={50}
-              priority
-              className="w-auto h-auto"
-            />
+          <div className="flex items-center w-full md:w-4/12">
+            <div className="hidden md:block">
+              <Image
+                src="/assets/logo/fina_mujer_logo.png"
+                alt="logo fina mujer"
+                width={150}
+                height={50}
+                priority
+                className="w-auto h-auto"
+              />
+            </div>
+            <div className="block md:hidden">
+              <Image
+                src="/assets/logo/icon.svg"
+                alt="icono para móviles"
+                width={50}
+                height={50}
+                priority
+                className="w-auto h-auto"
+              />
+            </div>
           </div>
           {showAuthButton && (
-            <button
-              className="bg-transparent border-4 border-[#102e6a] w-6/12 lg:w-3/12  p-1 cursor-pointer"
-              onClick={handleAuth}
-            >
-              <p className="w-full bg-[#102e6a] py-2 font-semibold text-[#fff] text-base md:text-lg caret-transparent">
-                Seleccionar Sector
-              </p>
-            </button>
+            <>
+              <div className="hidden md:flex w-full md:w-8/12 gap-5 justify-end items-center">
+                <AuthButton onClick={handleAuth} />
+                <HomeButton onClick={handleHome} />
+              </div>
+              <div className="md:hidden">
+                <button onClick={toggleMenu} className="focus:outline-none">
+                  <AiOutlineMenu className="w-6 h-6" />
+                </button>
+              </div>
+            </>
           )}
         </div>
+        <MobileMenu
+          menuOpen={menuOpen}
+          toggleMenu={toggleMenu}
+          showAuthButton={showAuthButton}
+          handleAuth={handleAuth}
+          handleHome={handleHome}
+        />
       </nav>
     </>
   );
-}
+};
 
 export default Nav;

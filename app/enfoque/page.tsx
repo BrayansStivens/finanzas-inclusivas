@@ -25,7 +25,7 @@ function RecomendacionesPage() {
             </p>
           </section>
           <div className="mb-4">
-            <IframeVideoPage src="https://www.youtube-nocookie.com/embed/CDH1UEG3nbo?si=77CLKQwOoQf0xJoD" />
+            <IframeVideoPage src="https://www.youtube.com/embed/dD2DPBvd7qs?si=wWq7riY2CLsAHsbN" />
           </div>
         </article>
       </main>

@@ -6,8 +6,8 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    clearStorage();
-  }, [window]);
+    return clearStorage();
+  }, []);
   return (
     <>
       <main className="flex flex-col justify-center px-4 py-5">
