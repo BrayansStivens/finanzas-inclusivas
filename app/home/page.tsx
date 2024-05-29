@@ -1,5 +1,4 @@
 import HomeImageSection from "./components/HomeImageSection";
-import HomeTextSection from "./components/HomeTextSection";
 import HomeCardSection from "./components/HomeCardSection";
 import Breadcrumb from "../../components/ui/Breadcrumb/index";
 
@@ -31,7 +30,6 @@ export default async function HomeFeaturesPage() {
       <main className="flex justify-center px-4 py-5">
         <article id="home" className="flex flex-col gap-5">
           <HomeImageSection images={imagesCarousel} />
-          <HomeTextSection />
           <HomeCardSection cards={cards} />
         </article>
       </main>

@@ -8,7 +8,7 @@ import Footer from "@/components/ui/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fina mujer",
+  title: "Finanzas Inclusivas",
   description: "app de finanzas",
 };
 

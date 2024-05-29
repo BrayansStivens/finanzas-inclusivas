@@ -9,6 +9,12 @@ const AuthSectorCard: React.FC<{
   otherEntities: [];
   solidarity: string[];
 }> = ({ financial, otherEntities, solidarity }) => {
+
+  const handleHome = () => {
+    router.push("/home");
+  };
+
+
   const [isOpen, setIsOpen] = useState({
     financial: false,
     solidarity: false,
@@ -46,12 +52,13 @@ const AuthSectorCard: React.FC<{
 
   return (
     <>
-      <h1 className="bg-[#2B6595] p-[25px] mt-[0] mx-[20px] mb-[30px] text-[25px] text-center text-[white] font-bold ">
-        Le solicitamos seleccionar el sector al que pertenece y la entidad
-        asociada a dicho sector, con el fin de recopilar estadísticas sobre el
-        uso de la herramienta. Si lo prefiere, puede omitir este paso y acceder
-        directamente a los módulos de la herramienta.
-      </h1>
+      <h3 className="bg-[#2B6595] p-[25px] mt-[0] mx-[20px] mb-[30px] text-[25px] text-center text-[white] font-bold ">
+        Valoramos sus opiniones y comentarios sobre el contenido de esta herramienta,
+        ya que nos permitirán mejorarla continuamente. Para empezar, les invitamos a indicar
+        a cuál de las siguientes entidades representan, mediante la selección de alguna de las
+        opciones que encontrarán en las listas desplegables que se presentan a continuación. Sin embargo, si prefieren,
+        pueden <span onClick={handleHome} className="cursor-pointer underline text-[#FFD700] hover:text-[#FFA500]">omitir</span> este paso y acceder directamente a los módulos de la herramienta.
+      </h3>
       <div className="flex flex-wrap mt-[0] mx-[20px] mb-[50px] justify-center gap-[30px]">
         <SectorCard
           imageSrc="/assets/images/financial_sector.jpg"

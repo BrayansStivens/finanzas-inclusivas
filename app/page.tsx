@@ -28,14 +28,20 @@ export default function Home() {
         </div>
         <section id="content" className="mt-5">
           <h5 className="text-lg md:text-xl italic font-semibold">
-            Esta herramienta digital de código abierto, diseñada para ofrecer
-            orientaciones prácticas y sencillas en el diseño y la implementación
-            de programas de educación financiera con enfoque de género y/o
-            diferencial, ha sido desarrollada por Microempresas de Colombia y la
-            Universidad Pontificia Bolivariana, en colaboración con USAID.
+            Le damos la bienvenida a la herramienta digital de código
+            abierto FINANZAS PARA TODAS desarrollada por la Universidad Pontificia Bolivariana y
+            Microempresas de Colombia con el apoyo de USAID con el fin de proporcionar una guía
+            práctica para las entidades del ecosistema financiero en Colombia a la hora de diseñar y
+            entregar programas de educación financiera con enfoque de género y/o diferencial a
+            mujeres rurales, afrocolombianas, indígenas, víctimas del conflicto armado y
+            emprendedoras. Esta herramienta se basa en un proceso de investigación cuantitativo y
+            cualitativo en donde se integran las mejores prácticas del ecosistema financiero y marcos
+            de referencia internacionales para la entrega efectiva de dichos programas. Confiamos en
+            que este recurso resulte de gran utilidad tanto para usted como para la organización que
+            representa.
           </h5>
           <br />
-          <p className="text-xl md:text-2xl italic font-medium">
+          <p className="text-xl md:text-xl italic font-medium">
             Este sitio web es posible gracias al apoyo del pueblo estadounidense
             a través de la Agencia de los Estados Unidos para el desarrollo
             Internacional (USAID). El contenido de este sitio es responsabilidad
