@@ -25,5 +25,9 @@ export async function ImagesCarousel() {
       src: "/assets/images/features_home_page_6.webp",
       alt: "Feature Image 6",
     },
+    {
+      src: "/assets/images/features_home_page_7.webp",
+      alt: "Feature Image 7",
+    },
   ];
 }
