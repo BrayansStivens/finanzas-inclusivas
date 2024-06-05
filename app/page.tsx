@@ -28,17 +28,19 @@ export default function Home() {
         </div>
         <section id="content" className="mt-5">
           <h5 className="text-lg md:text-xl italic font-semibold">
-            Le damos la bienvenida a la herramienta digital de código
-            abierto FINANZAS PARA TODAS desarrollada por la Universidad Pontificia Bolivariana y
-            Microempresas de Colombia con el apoyo de USAID con el fin de proporcionar una guía
-            práctica para las entidades del ecosistema financiero en Colombia a la hora de diseñar y
-            entregar programas de educación financiera con enfoque de género y/o diferencial a
-            mujeres rurales, afrocolombianas, indígenas, víctimas del conflicto armado y
-            emprendedoras. Esta herramienta se basa en un proceso de investigación cuantitativo y
-            cualitativo en donde se integran las mejores prácticas del ecosistema financiero y marcos
-            de referencia internacionales para la entrega efectiva de dichos programas. Confiamos en
-            que este recurso resulte de gran utilidad tanto para usted como para la organización que
-            representa.
+            Le damos la bienvenida a la herramienta digital de código abierto
+            FINANZAS PARA TODAS desarrollada por la Universidad Pontificia
+            Bolivariana y Microempresas de Colombia con el apoyo de USAID con el
+            fin de proporcionar una guía práctica a entidades del ecosistema
+            financiero como Bancos, Cooperativas, Fintechs, ONG´s
+            microcrediticias (entre otras) en Colombia a la hora de diseñar y
+            entregar programas de educación financiera con enfoque de género y/o
+            diferencial a mujeres rurales, afrocolombianas, indígenas, víctimas
+            del conflicto armado y emprendedoras. Esta herramienta se basa en un
+            proceso de investigación tanto cuantitativo como cualitativo y en la
+            aplicación de marcos de referencia nacionales e internacionales para
+            la entrega efectiva de este tipo de programas, así que confiamos en
+            que este recurso le sea de gran utilidad.
           </h5>
           <br />
           <p className="text-xl md:text-xl italic font-medium">

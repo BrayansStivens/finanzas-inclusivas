@@ -9,11 +9,9 @@ const AuthSectorCard: React.FC<{
   otherEntities: [];
   solidarity: string[];
 }> = ({ financial, otherEntities, solidarity }) => {
-
   const handleHome = () => {
     router.push("/home");
   };
-
 
   const [isOpen, setIsOpen] = useState({
     financial: false,
@@ -52,12 +50,21 @@ const AuthSectorCard: React.FC<{
 
   return (
     <>
-      <h3 className="bg-[#2B6595] p-[25px] mt-[0] mx-[20px] mb-[30px] text-[25px] text-center text-[white] font-bold ">
-        Valoramos sus opiniones y comentarios sobre el contenido de esta herramienta,
-        ya que nos permitirán mejorarla continuamente. Para empezar, les invitamos a indicar
-        a cuál de las siguientes entidades representan, mediante la selección de alguna de las
-        opciones que encontrarán en las listas desplegables que se presentan a continuación. Sin embargo, si prefieren,
-        pueden <span onClick={handleHome} className="cursor-pointer underline text-[#FFD700] hover:text-[#FFA500]">omitir</span> este paso y acceder directamente a los módulos de la herramienta.
+      <h3 className="bg-[#2B6595] p-[25px] mt-[0] mx-[20px] mb-[30px] text-[25px] text-justify text-[white] font-bold ">
+        Lo(la) invitamos a que nos indique a cuál de las siguientes entidades
+        representa mediante la selección de alguna de las opciones que
+        encontrará en las listas desplegables que se presentan a continuación,
+        para así determinar poder determinar el nivel de acogida de esta
+        herramienta dentro de las diferentes entidades del ecosistema financiero
+        y las necesidades de ajustes posteriores para satisfacer mejor las
+        necesidades de cada entidad; sin embargo sí lo prefiere puede{" "}
+        <span
+          onClick={handleHome}
+          className="cursor-pointer underline text-[#FFD700] hover:text-[#FFA500]"
+        >
+          omitir
+        </span>{" "}
+        este paso y acceder directamente a los módulos de la herramienta.
       </h3>
       <div className="flex flex-wrap mt-[0] mx-[20px] mb-[50px] justify-center gap-[30px]">
         <SectorCard
