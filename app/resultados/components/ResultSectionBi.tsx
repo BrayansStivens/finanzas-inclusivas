@@ -16,46 +16,43 @@ const ResultSectionBi: React.FC = () => {
       <PageTitle title="Resultados de la investigación en la que se basó la herramienta" />
       <div className="px-2">
         <p className="text-justify my-3 mx-2">
-          Como se mencionó anteriormente, esta herramienta se desarrolló
-          mediante un proceso de investigación cuantitativo y cualitativo. Su
-          principal objetivo fue identificar las preferencias, necesidades y
-          barreras de las mujeres en cuanto a la educación financiera, así como
-          las mejores prácticas dentro del ecosistema financiero en Colombia
-          para diseñar e implementar programas con enfoque de género y
-          diferencial.
+          Esta herramienta se basa en los resultados de un proceso de
+          investigación tanto cuantitativo como cualitativo que fue desarrollado
+          de la siguiente manera:
         </p>
+
+        <ul className="text-justify my-3 mx-2 list-disc list-inside">
+          <li className="pl-3">
+            <strong>Investigación cuantitativa:</strong> fueron encuestadas 4543
+            mujeres rurales, afrocolombianas, indígenas, víctimas directas del
+            conflicto armado y emprendedoras, residentes en 20 municipios de
+            Antioquia y 3 de Caldas con el fin de identificar sus necesidades,
+            preferencias, barreras y expectativas en cuanto a educación
+            financiera.
+          </li>
+          <li className="pl-3">
+            <strong>Investigación cualitativa:</strong> se aplicó una entrevista
+            semiestructurada a los Referentes de educación financiera, género,
+            diversidad e inclusión de siete (7) entidades del ecosistema
+            financiero en Colombia que cuentan con programas de educación
+            financiera con enfoque de género en diferentes fases de desarrollo.
+            El propósito de estas entrevistas, fue identificar buenas prácticas
+            para la entrega de programas de educación financiera con enfoque de
+            género aplicadas y validadas por estas entidades e incorporar el
+            punto de vista de los prestadores de servicios financieros al
+            proceso tanto de diseño como de desarrollo de esta herramienta.
+          </li>
+        </ul>
+
         <p className="text-justify my-3 mx-2">
-          El proceso de investigación cuantitativo comprendió la realización de
-          una encuesta a 4543 mujeres rurales, afrocolombianas, indígenas,
-          víctimas los conflictos armados y emprendedoras, residentes en 20
-          municipios de Antioquia y 3 de Caldas. Por otro lado, el proceso de
-          investigación cualitativo implicó la realización de entrevistas
-          semiestructuradas a líderes de Educación Financiera, Género,
-          Diversidad e Inclusión en siete (7) entidades del ecosistema
-          financiero, las cuales cuentan con programas de educación financiera
-          con enfoque de género y/o diferencial en diferentes etapas de
-          desarrollo.
-        </p>
-        <p className="text-justify my-3 mx-2">
-          En este módulo, se presentarán los principales resultados de ambos
-          procesos de investigación. Este esfuerzo busca contribuir a la
-          construcción de conocimiento en materia de educación financiera con
-          enfoque de género y diferencial en Colombia, dentro del contexto del
-          ecosistema financiero del país.
-        </p>
-        <p className="text-justify my-3 mx-2">
-          En este módulo, presentamos un tablero de POWER BI que cuenta con
-          filtros correspondientes a variables del enfoque interseccional, así
-          como otros aspectos complementarios como conectividad, municipio y
-          tenencia de productos financieros. Estas variables fueron investigadas
-          y podrían influir en la manera en que las mujeres reciben y adoptan
-          conocimientos en educación financiera.
-        </p>
-        <p className="text-justify my-3 mx-2">
-          La información que encontrará después de seleccionar una o varias
-          opciones de los filtros proviene de la investigación cuantitativa que
-          también sirvió de base para esta herramienta. Le invitamos a explorar
-          y aprovechar al máximo la información disponible aquí.
+          En este módulo, se presentan los resultados de la investigación
+          cuantitativa mediante un tablero de POWER BI en el que usted podrá
+          filtrar los datos según su interés y/o necesidad y se presentan
+          también los resultados de la investigación cualitativa, mediante un
+          consolidado de buenas prácticas para el diseño y entrega de programas
+          de educación financiera con enfoque de género aportadas por las siete
+          (7) entidades que participaron en esa parte del proceso de
+          investigación.
         </p>
       </div>
       <div className=" flex flex-col gap-5 md:gap-12 items-center md:items-end mt-4 px-5">

@@ -32,7 +32,7 @@ function HomeImageSection({ images }: any) {
 
   return (
     <section id="home_image" className="flex flex-col w-full h-auto relative">
-      <div className="relative w-full h-0 pb-[32.4%] overflow-hidden">
+      <div className="relative w-full h-0 pb-[42.4%] overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -40,7 +40,7 @@ function HomeImageSection({ images }: any) {
           {images.map((image: any, index: number) => (
             <div
               key={index}
-              className="relative w-full flex-shrink-0 h-0 pb-[32.4%]"
+              className="relative w-full flex-shrink-0 h-0 pb-[42.4%]"
             >
               <Image
                 src={image.src}

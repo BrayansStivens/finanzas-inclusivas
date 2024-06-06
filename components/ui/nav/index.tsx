@@ -34,9 +34,8 @@ const Nav: React.FC = () => {
       <header className="bg-[#2a63b1] h-[40px] w-full" />
       <nav className="border-b p-4">
         <div
-          className={`mx-auto flex items-center ${
-            showAuthButton ? "justify-between" : "justify-center"
-          } md:justify-between`}
+          className={`mx-auto flex items-center ${showAuthButton ? "justify-between" : "justify-center"
+            } md:justify-between`}
         >
           <div className="flex items-center w-full md:w-4/12">
             <div className="hidden md:block">
@@ -64,7 +63,7 @@ const Nav: React.FC = () => {
             <>
               <div className="hidden md:flex w-full md:w-8/12 gap-5 justify-end items-center">
                 <AuthButton onClick={handleAuth} />
-                <HomeButton onClick={handleHome} />
+                {/* <HomeButton onClick={handleHome} /> */}
               </div>
               <div className="md:hidden">
                 <button onClick={toggleMenu} className="focus:outline-none">

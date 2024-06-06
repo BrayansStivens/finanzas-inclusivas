@@ -2,7 +2,6 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 import PageTitle from "@/components/ui/PageTitle";
 
 function Evaluacion() {
-
   return (
     <>
       <Breadcrumb title="Guía" />
@@ -11,10 +10,20 @@ function Evaluacion() {
           <PageTitle title={"Instrumento de evaluación"} />
           <section id="content" className="w-full">
             <p className="text-justify mb-3">
-              En este módulo, se presenta una propuesta de instrumento para evaluar la efectividad de los programas de educación financiera desarrollados por las entidades del ecosistema financiero. Esta propuesta se centra en la medición de los cambios en conocimientos, actitudes, habilidades y comportamientos financieros de los participantes antes y después de recibir este tipo de educación no formal.
+              En este módulo, se presenta una propuesta de instrumento para
+              evaluar la efectividad de los programas de educación financiera
+              desarrollados por las entidades del ecosistema financiero a través
+              de la medición de cambios en conocimientos, actitudes, habilidades
+              y comportamientos en educación financiera.
             </p>
             <p className="text-justify mb-3">
-              El diseño metodológico de este instrumento se fundamenta principalmente en los lineamientos proporcionados por el National Endowment for Financial Education en el <strong>NEFE FINANCIAL EDUCATION EVALUATION MANUAL</strong>. Además, se han considerado otros marcos de referencia existentes en Colombia en esta materia.            </p>
+              El diseño metodológico de este instrumento se basa principalmente
+              en los lineamientos proporcionados por el National Endowment for
+              Financial Education en el NEFE FINANCIAL EDUCATION EVALUATION
+              MANUAL del año 2016 desarrollado por Investigadores del Claremont
+              Evaluation Center y fue complementado con otros marcos de
+              referencia relevantes existentes en Colombia.
+            </p>
           </section>
           <section
             id="recomendados"

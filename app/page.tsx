@@ -32,7 +32,7 @@ export default function Home() {
             FINANZAS PARA TODAS desarrollada por la Universidad Pontificia
             Bolivariana y Microempresas de Colombia con el apoyo de USAID con el
             fin de proporcionar una guía práctica a entidades del ecosistema
-            financiero como Bancos, Cooperativas, Fintechs, ONG´s
+            financiero como Bancos, Cooperativas, Fintechs, ONG’s
             microcrediticias (entre otras) en Colombia a la hora de diseñar y
             entregar programas de educación financiera con enfoque de género y/o
             diferencial a mujeres rurales, afrocolombianas, indígenas, víctimas
@@ -47,8 +47,9 @@ export default function Home() {
             Este sitio web es posible gracias al apoyo del pueblo estadounidense
             a través de la Agencia de los Estados Unidos para el desarrollo
             Internacional (USAID). El contenido de este sitio es responsabilidad
-            exclusiva de UPB y Microempresas y no refleja necesariamente las
-            opiniones de USAID o del gobierno de los Estados Unidos
+            exclusiva de Universidad Pontifica Bolivariana y Microempresas de
+            Colombia y no refleja necesariamente las opiniones de USAID o del
+            gobierno de los Estados Unidos.
           </p>
         </section>
       </main>
