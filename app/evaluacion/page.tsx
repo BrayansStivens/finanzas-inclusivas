@@ -1,10 +1,20 @@
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import ModuleButton from "@/components/ui/ModuleButton";
 import PageTitle from "@/components/ui/PageTitle";
 
 function Evaluacion() {
+  const dataBtn = [
+    {
+      text: "Ir al modulo anterior",
+      href: "/guia",
+      position: "start",
+    },
+  ];
+
   return (
     <>
       <Breadcrumb title="Guía" />
+      <ModuleButton dataBtn={dataBtn} />
       <main className="flex justify-center px-4 py-5">
         <article id="evaluacion" className="flex flex-col gap-5 w-full">
           <PageTitle title={"Instrumento de evaluación"} />

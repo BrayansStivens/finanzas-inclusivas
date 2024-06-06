@@ -3,6 +3,7 @@ import PageTitle from "@/components/ui/PageTitle";
 import { Perfil } from "@/app/api/perfiles/route";
 import PerfilesTable from "./components/PerfilesTable";
 import TableTopics, { Topics } from "../../components/ui/TableTopics";
+import ModuleButton from "@/components/ui/ModuleButton";
 
 async function getPerfiles(): Promise<Perfil[]> {
   const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -26,9 +27,23 @@ async function Guia() {
   const perfiles: Perfil[] = await getPerfiles();
   const tables: Topics[] = await getTablesContent();
 
+  const dataBtn = [
+    {
+      text: "Ir al modulo Anterior",
+      href: "/perfilamiento",
+      position: "perfilamiento",
+    },
+    {
+      text: "Ir al siguiente modulo",
+      href: "/evaluacion",
+      position: "end",
+    },
+  ];
+
   return (
     <>
       <Breadcrumb title="Guía" />
+      <ModuleButton dataBtn={dataBtn} />
       <main className="flex justify-center px-4 py-5">
         <article id="guia" className="flex flex-col gap-5 w-full">
           <PageTitle title={"Guía de formación"} />

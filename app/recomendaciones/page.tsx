@@ -1,12 +1,21 @@
 // app/recomendaciones/page.tsx
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import IframeVideoPage from "@/components/ui/IframeVideoPage";
+import ModuleButton from "@/components/ui/ModuleButton";
 import PageTitle from "@/components/ui/PageTitle";
 
 function RecomendacionesPage() {
+  const dataBtn = [
+    {
+      text: "Ir al siguiente modulo",
+      href: "/enfoque",
+      position: "end",
+    },
+  ];
   return (
     <>
       <Breadcrumb title="Recomendaciones" />
+      <ModuleButton dataBtn={dataBtn} />
       <main className="flex justify-center px-4 py-5">
         <article id="recomendaciones" className="flex flex-col gap-5 w-full">
           <PageTitle title={"Recomendaciones para el uso de la herramienta"} />

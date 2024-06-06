@@ -13,8 +13,7 @@ export default function Home() {
       <main className="flex flex-col justify-center px-4 py-5">
         <section
           id="identificate"
-          className="hidden md:block bg-[url('/assets/images/home_page.webp')] bg-cover w-full h-[740px]"
-          style={{ backgroundPositionY: "10%" }}
+          className="w-full h-[600px] bg-[url('/assets/images/home_page.webp')] bg-cover bg-center hidden md:block lg:h-[600px] md:h-[500px] sm:h-[400px]"
         ></section>
         <div className="flex gap-2 flex-col md:hidden w-full h-auto relative">
           <Image
@@ -47,7 +46,7 @@ export default function Home() {
             Este sitio web es posible gracias al apoyo del pueblo estadounidense
             a través de la Agencia de los Estados Unidos para el desarrollo
             Internacional (USAID). El contenido de este sitio es responsabilidad
-            exclusiva de Universidad Pontifica Bolivariana y Microempresas de
+            exclusiva de Universidad Pontificia Bolivariana y Microempresas de
             Colombia y no refleja necesariamente las opiniones de USAID o del
             gobierno de los Estados Unidos.
           </p>

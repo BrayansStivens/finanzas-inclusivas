@@ -2,6 +2,7 @@ import React from "react";
 import ResultSectionText from "./components/ResultSectionText";
 import ResultSectionBi from "./components/ResultSectionBi";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import ModuleButton from "@/components/ui/ModuleButton";
 
 async function getResultTopics() {
   const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -13,10 +14,23 @@ async function getResultTopics() {
 }
 
 const ResearchResult: React.FC = async () => {
+  const dataBtn = [
+    {
+      text: "Ir al modulo Anterior",
+      href: "/enfoque",
+      position: "end",
+    },
+    {
+      text: "Ir al siguiente modulo",
+      href: "/perfilamiento",
+      position: "end",
+    },
+  ];
   const topics = await getResultTopics();
   return (
     <>
       <Breadcrumb title="Resultados" />
+      <ModuleButton dataBtn={dataBtn} />
       <main>
         <article id="resultados" className="flex flex-col gap-5">
           <ResultSectionBi />
