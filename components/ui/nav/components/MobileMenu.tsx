@@ -54,7 +54,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         {showAuthButton && (
           <div className="p-4 flex flex-col space-y-4">
             <AuthButton onClick={handleAuth} />
-            <HomeButton onClick={handleHome} />
+            {/* <HomeButton onClick={handleHome} /> */}
           </div>
         )}
       </div>
