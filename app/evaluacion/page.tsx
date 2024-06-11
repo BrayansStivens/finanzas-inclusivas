@@ -39,7 +39,10 @@ function Evaluacion() {
             id="recomendados"
             className="flex justify-center items-center my-5"
           >
-            <a href="https://storage.googleapis.com/images_wp/pdfs/Instrumento%20de%20medici%C3%B3n.xlsx">
+            <a
+              href="https://storage.googleapis.com/images_wp/pdfs/Instrumento%20de%20medici%C3%B3n%20V1.xlsx"
+              rel="no-follow"
+            >
               <button
                 type="button"
                 className="border-2 border-[#5e2232] text-[#5e2232] px-5 py-2 font-semibold text-lg md:text-2xl"

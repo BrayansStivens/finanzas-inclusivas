@@ -31,14 +31,13 @@ function RecomendacionesPage() {
           />
           <section id="text" className="w-full">
             <p className="w-full text-justify font-medium text-lg mb-3">
-              Como se mencionó en el módulo anterior, la lógica de
-              funcionamiento de esta herramienta se basa en el enfoque
-              interseccional ya que variables como el nivel educativo, condición
-              socioeconómica, edad, etnia, presencia o ausencia de una situación
-              de discapacidad, lugar de residencia (rural o urbana) y el
-              autoreconocimiento como víctima del conflicto armado inciden de
-              manera representativa en la forma en como las mujeres acceden a
-              los conocimientos en educación financiera y los apropian.
+              Como se mencionó previamente, la lógica de funcionamiento de esta
+              herramienta se basa en el enfoque interseccional ya que variables
+              como el nivel educativo, condición socioeconómica, edad, etnia,
+              lugar de residencia (rural o urbana) y el autoreconocimiento como
+              víctima del conflicto armado inciden de manera representativa en
+              la forma en como las mujeres acceden a los conocimientos en
+              educación financiera y los apropian.
             </p>
             <p className="w-full text-justify font-medium text-lg mb-3">
               A continuación, se presenta un video que ofrece una explicación

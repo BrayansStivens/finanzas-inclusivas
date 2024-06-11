@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/ui/footer";
 import { clearStorage } from "@/utils/handles/handleStorage";
 import Image from "next/image";
 import { useEffect } from "react";
@@ -8,6 +9,11 @@ export default function Home() {
   useEffect(() => {
     return clearStorage();
   }, []);
+
+  const content = `Para empezar, le invitamos a que nos indique a cuál de las siguientes entidades representa
+mediante la selección de alguna de las opciones que encontrará en las listas desplegables que se
+presentan a continuación; sin embargo, sí lo prefiere puede omitir este paso y acceder
+directamente a los módulos de la herramienta ingresando al siguiente link.`;
   return (
     <>
       <main className="flex flex-col justify-center px-4 py-5">
@@ -25,22 +31,22 @@ export default function Home() {
             priority
           />
         </div>
-        <section id="content" className="mt-5">
-          <h5 className="text-lg md:text-xl italic font-semibold">
+        <section id="content" className="mt-[25px]">
+          <h5 className="text-lg md:text-xl italic">
             Le damos la bienvenida a la herramienta digital de código abierto
             FINANZAS PARA TODAS desarrollada por la Universidad Pontificia
             Bolivariana y Microempresas de Colombia con el apoyo de USAID con el
             fin de proporcionar una guía práctica a entidades del ecosistema
-            financiero como Bancos, Cooperativas, Fintechs, ONG’s
-            microcrediticias (entre otras) en Colombia a la hora de diseñar y
-            entregar programas de educación financiera con enfoque de género y/o
-            diferencial a mujeres rurales, afrocolombianas, indígenas, víctimas
-            del conflicto armado y emprendedoras. Esta herramienta se basa en un
-            proceso de investigación tanto cuantitativo como cualitativo y en la
-            aplicación de marcos de referencia nacionales e internacionales para
-            la entrega efectiva de este tipo de programas, así que confiamos en
-            que este recurso le sea de gran utilidad.
+            financiero a la hora de diseñar y entregar programas de educación
+            financiera con enfoque de género y/o diferencial a mujeres rurales,
+            afrocolombianas, indígenas, víctimas del conflicto armado y
+            emprendedoras. Esta herramienta se basa en un proceso de
+            investigación de corte mixto y en la aplicación de marcos de
+            referencia nacionales e internacionales para la entrega efectiva de
+            este tipo de programas, así que confiamos en que este recurso le sea
+            de gran utilidad.
           </h5>
+
           <br />
           <p className="text-xl md:text-xl italic font-medium">
             Este sitio web es posible gracias al apoyo del pueblo estadounidense

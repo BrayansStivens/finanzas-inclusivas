@@ -51,7 +51,7 @@ const AuthSectorCard: React.FC<{
   return (
     <>
       <h3 className="bg-[#2B6595] p-[25px] mt-[0] mx-[20px] mb-[30px] text-[25px] text-justify text-[white] font-bold ">
-        Lo(la) invitamos a que nos indique a cuál de las siguientes entidades
+        Les invitamos a que nos indique a cuál de las siguientes entidades
         representa mediante la selección de alguna de las opciones que
         encontrará en las listas desplegables que se presentan a continuación,
         para así determinar poder determinar el nivel de acogida de esta

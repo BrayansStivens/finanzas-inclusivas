@@ -22,29 +22,22 @@ function RecomendacionesPage() {
 
           <section id="text" className="w-full row-gap-10">
             <p className="w-full text-justify mb-4">
-              En este módulo, presentamos orientaciones para el uso adecuado de
-              la herramienta FINANZAS PARA TODAS así que con el propósito de
-              facilitar la comprensión de su esquema y lógica de funcionamiento,
-              a continuación se incluye un video tutorial sobre el uso de la
-              herramienta en el cual se mostrarán los diferentes módulos de los
-              que se compone la herramienta, los contenidos disponibles, filtros
-              y otros detalles relevantes para usted como usuario.
+              En este módulo encontrará un video tutorial a través del cual se
+              darán orientaciones para el uso adecuado de la herramienta
+              FINANZAS PARA TODAS y se explicarán los contenidos disponibles,
+              filtros y otros detalles relevantes para usted como usuario.
             </p>
             <p className="w-full text-justify mb-4">
               Es importante destacar que la lógica de funcionamiento de esta
               herramienta se basa en el enfoque interseccional y concretamente
               en variables como edad, etnia, condición socioeconómica,
               autoreconocimiento como víctima del conflicto armado, lugar de
-              residencia (urbano y rural), presencia o ausencia de una situación
-              de discapacidad y nivel educativo de las mujeres potencialmente
-              beneficiarias de un programa de educación financiera, así que esas
-              variables constituyen criterios primarios para la búsqueda y
-              generación de información en la herramienta.
+              residencia (urbano y rural) y nivel educativo de las mujeres
+              potencialmente beneficiarias de un programa de educación
+              financiera, así que esas variables constituyen criterios primarios
+              tanto de búsqueda como de generación de información en “FINANZAS
+              PARA TODAS”.
             </p>
-            {/*             <p className="w-full text-justify mb-4">
-              En el siguiente video, se presentan los pasos para acceder a la
-              herramienta y su funcionamiento:
-            </p> */}
           </section>
           <div className="mb-4">
             <IframeVideoPage src="https://www.youtube-nocookie.com/embed/CDH1UEG3nbo?si=77CLKQwOoQf0xJoD" />

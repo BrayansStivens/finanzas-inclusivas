@@ -50,25 +50,24 @@ async function Guia() {
           <section id="content" className="w-full flex flex-col gap-10">
             <div className="w-full">
               <p className="w-full text-justify font-medium text-lg md:text-xl mb-3">
-                En este módulo, usted podrá descargar la ruta de formación
-                sugerida para el perfil o perfiles que seleccionó en el módulo
-                anterior la cual incluye la siguiente información: temas o
-                contenidos sugeridos a abordar durante el programa de educación
-                financiera con enfoque de género, modalidades más adecuadas para
-                la entrega de dicho programa, propuesta de materiales a
-                desarrollar y estrategias pedagógicas específicas para cada
-                perfil seleccionado previamente.
+                En este módulo usted podrá descargar la ruta de formación
+                sugerida para el perfil que seleccionó en el módulo anterior, la
+                cual incluye la siguiente información: temas o contenidos
+                sugeridos a abordar en el programa de educación financiera,
+                modalidades más adecuadas para la entrega de dicho programa,
+                propuesta de materiales a desarrollar y estrategias pedagógicas
+                específicas para cada perfil seleccionado previamente.
               </p>
               <p className="w-full text-justify font-medium text-lg md:text-xl mb-3">
                 Es importante destacar que estas recomendaciones se elaboraron
-                considerando los resultados del proceso de investigación tanto a
-                nivel cuantitativo como cualitativo, los lineamientos dados por
-                Banca de las Oportunidades en el documento{" "}
+                considerando los resultados del proceso de investigación de
+                corte mixto, los lineamientos dados por Banca de las
+                Oportunidades en el documento{" "}
                 <strong>
                   “Contenidos mínimos para programas de educación económica y
                   financiera no formal en Colombia 2022”
                 </strong>
-                , entre otros marcos de referencia relevantes a nivel nacional e
+                y otros marcos de referencia relevantes a nivel nacional e
                 internacional.
               </p>
             </div>
