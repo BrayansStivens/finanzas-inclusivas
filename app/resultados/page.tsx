@@ -16,12 +16,12 @@ async function getResultTopics() {
 const ResearchResult: React.FC = async () => {
   const dataBtn = [
     {
-      text: "Ir al modulo Anterior",
+      text: "Ir al módulo Anterior",
       href: "/enfoque",
       position: "end",
     },
     {
-      text: "Ir al siguiente modulo",
+      text: "Ir al siguiente módulo",
       href: "/perfilamiento",
       position: "end",
     },

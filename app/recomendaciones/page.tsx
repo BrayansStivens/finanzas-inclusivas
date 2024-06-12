@@ -7,7 +7,12 @@ import PageTitle from "@/components/ui/PageTitle";
 function RecomendacionesPage() {
   const dataBtn = [
     {
-      text: "Ir al siguiente modulo",
+      text: "Regresar",
+      href: "/home",
+      position: "end",
+    },
+    {
+      text: "Ir al siguiente módulo",
       href: "/enfoque",
       position: "end",
     },

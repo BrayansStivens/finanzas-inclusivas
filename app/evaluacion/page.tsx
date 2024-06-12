@@ -9,6 +9,11 @@ function Evaluacion() {
       href: "/guia",
       position: "start",
     },
+    {
+      text: "Inicio",
+      href: "/home",
+      position: "start",
+    },
   ];
 
   return (

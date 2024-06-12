@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
     if (pathname === "/") {
       setShowFooter(true);
       setFooterText(
-        `Para empezar, le invitamos a que nos indique a cuál de las siguientes entidades representa
-        mediante la selección de alguna de las opciones que encontrará en las listas desplegables que se
-        presentan a continuación; sin embargo, sí lo prefiere puede omitir este paso y acceder
-        directamente a los módulos de la herramienta ingresando al siguiente link.`
+        `Este sitio web es posible gracias al apoyo del pueblo estadounidense a través de la 
+        Agencia de los Estados Unidos para el desarrollo Internacional (USAID). El contenido de este sitio es 
+        responsabilidad exclusiva de Universidad Pontifica Bolivariana y Microempresas de Colombia y no refleja 
+        necesariamente las opiniones de USAID o del gobierno de los Estados Unidos.`
       );
     } else if (pathname === "/auth") {
       setShowFooter(false);
@@ -33,17 +33,7 @@ const Footer: React.FC = () => {
     <footer className="bg-[#102E6A] text-[white] p-[20px] text-center mt-auto">
       <div className="mt-[20px] justify-center max-w-[1300px] mx-[auto]">
         <p className="m-0 text-[18px] text-left m-5 text-[15px]">
-          {footerText.includes("ingresando al siguiente link") ? (
-            <span className="text-[14px]">
-              {footerText.split("ingresando al siguiente link")[0]}
-              <Link href="/home" className="underline ">
-                ingresando al siguiente link
-              </Link>
-              {footerText.split("ingresando al siguiente link")[1]}
-            </span>
-          ) : (
-            footerText
-          )}
+          {footerText}
         </p>
         <hr className="border-[0] h-px bg-[#cacaca] mt-[0] mb-[10px]" />
       </div>

@@ -29,12 +29,12 @@ async function Guia() {
 
   const dataBtn = [
     {
-      text: "Ir al modulo Anterior",
+      text: "Ir al módulo Anterior",
       href: "/perfilamiento",
       position: "perfilamiento",
     },
     {
-      text: "Ir al siguiente modulo",
+      text: "Ir al siguiente módulo",
       href: "/evaluacion",
       position: "end",
     },

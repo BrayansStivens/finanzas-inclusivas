@@ -23,11 +23,12 @@ const ResultSectionText: React.FC<{ data: Topics[] }> = ({ data }) => {
         género y diferencial aportadas por las siete (7) entidades que
         participaron en esa parte del proceso de investigación.
       </p>
-      <div className="mt-0 mx-4 mb-0 text-justify leading-relaxed space-y-5">
+      <div className="mt-0 mx-4 mb-0 text-justify leading-relaxed space-y-5 flex justify-center">
         <a
           href="https://storage.googleapis.com/images_wp/pdfs/Buenas%20pr%C3%A1cticas.pdf"
           target="_blank"
           rel="no-follow"
+          className="w-[80%] flex justify-center "
         >
           <h2 className="bg-[#102E6A] p-[12px] mt-[0] mb-[10px] mt-[30px] text-1xl text-center text-[white] font-bold cursor-pointer">
             {" "}

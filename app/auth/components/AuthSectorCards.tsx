@@ -50,14 +50,14 @@ const AuthSectorCard: React.FC<{
 
   return (
     <>
-      <h3 className="bg-[#2B6595] p-[25px] mt-[0] mx-[20px] mb-[30px] text-[25px] text-justify text-[white] font-bold ">
+      <h3 className="bg-[#2B6595] p-[25px] mt-[0] mx-[20px] mb-[30px] text-[22px] text-left text-[white] font-bold ">
         Les invitamos a que nos indique a cuál de las siguientes entidades
         representa mediante la selección de alguna de las opciones que
         encontrará en las listas desplegables que se presentan a continuación,
-        para así determinar poder determinar el nivel de acogida de esta
-        herramienta dentro de las diferentes entidades del ecosistema financiero
-        y las necesidades de ajustes posteriores para satisfacer mejor las
-        necesidades de cada entidad; sin embargo sí lo prefiere puede{" "}
+        para así poder determinar el nivel de acogida de esta herramienta dentro
+        de las diferentes entidades del ecosistema financiero y las necesidades
+        de ajustes posteriores para satisfacer mejor las necesidades de cada
+        entidad; sin embargo sí lo prefiere puede{" "}
         <span
           onClick={handleHome}
           className="cursor-pointer underline text-[#FFD700] hover:text-[#FFA500]"

@@ -3,6 +3,7 @@
 import Footer from "@/components/ui/footer";
 import { clearStorage } from "@/utils/handles/handleStorage";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -47,15 +48,18 @@ directamente a los módulos de la herramienta ingresando al siguiente link.`;
             de gran utilidad.
           </h5>
 
-          <br />
+          {/* <br />
           <p className="text-xl md:text-xl italic font-medium">
-            Este sitio web es posible gracias al apoyo del pueblo estadounidense
-            a través de la Agencia de los Estados Unidos para el desarrollo
-            Internacional (USAID). El contenido de este sitio es responsabilidad
-            exclusiva de Universidad Pontificia Bolivariana y Microempresas de
-            Colombia y no refleja necesariamente las opiniones de USAID o del
-            gobierno de los Estados Unidos.
-          </p>
+            Para empezar, le invitamos a que nos indique a cuál de las
+            siguientes entidades representa mediante la selección de alguna de
+            las opciones que encontrará en las listas desplegables que se
+            presentan a continuación; sin embargo, sí lo prefiere puede omitir
+            este paso y acceder directamente a los módulos de la herramienta
+            ingresando{" "}
+            <span className="underline">
+              <Link href={"/home"}>al siguiente link.</Link>
+            </span>
+          </p> */}
         </section>
       </main>
     </>

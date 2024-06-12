@@ -8,12 +8,12 @@ import Image from "next/image";
 function RecomendacionesPage() {
   const dataBtn = [
     {
-      text: "Ir al modulo Anterior",
+      text: "Ir al módulo Anterior",
       href: "/recomendaciones",
       position: "end",
     },
     {
-      text: "Ir al siguiente modulo",
+      text: "Ir al siguiente módulo",
       href: "/resultados",
       position: "end",
     },
@@ -51,6 +51,14 @@ function RecomendacionesPage() {
           <div className="mb-4 w-full">
             <IframeVideoPage src="https://www.youtube.com/embed/ujpz1-jWdtI?si=0UPrXzjLkNqL0zHN" />
             <br />
+            <br />
+
+            <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-center px-5 md:px-44">
+              <p className="md:text-lg text-justify">
+                Si quieres saber más sobre el enfoque interseccional, te
+                invitamos a consultar los siguientes documentos:
+              </p>
+            </div>
             <br />
             <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-center px-5 md:px-44">
               <Image

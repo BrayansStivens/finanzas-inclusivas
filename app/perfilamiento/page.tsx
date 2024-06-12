@@ -6,12 +6,12 @@ import ModuleButton from "@/components/ui/ModuleButton";
 const Profile: React.FC = () => {
   const dataBtn = [
     {
-      text: "Ir al modulo Anterior",
+      text: "Ir al módulo Anterior",
       href: "/resultados",
       position: "end",
     },
     {
-      text: "Ir al siguiente modulo",
+      text: "Ir al siguiente módulo",
       href: "/guia",
       position: "end",
     },

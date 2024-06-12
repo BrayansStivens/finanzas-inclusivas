@@ -14,11 +14,12 @@ export async function getSectorItemsData() {
       "Bolsa de Valores",
       "Agencia de Seguros",
       "Sociedad de Capitalización",
+      "Fintech reguladas por la Superfinanciera",
     ],
     solidarity: [
       "ONG",
       "Empresa social",
-      "Fintech",
+      "Fintech no reguladas por la Superfinanciera",
       "Agencia de cooperación internacional",
       "Organismo unilateral",
       "Empresa de desarrollo internacional",
