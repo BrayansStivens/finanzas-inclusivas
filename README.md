@@ -1,7 +1,7 @@
 
 ---
 
-# Fina Mujer
+# Finanzas inclusivas
 
 ![Next.js](https://img.shields.io/badge/Next.js-14.2.3-blue.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.4.5-blue.svg)

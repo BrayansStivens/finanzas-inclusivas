@@ -7,27 +7,20 @@ const __dirname = path.dirname(__filename);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config, { isServer }) => {
-    // Configuración personalizada de Webpack
     config.resolve.alias["@Components"] = path.join(__dirname, "components");
-
-    // Añadir regla para manejar el módulo `punycode`
-    config.module.rules.push({
-      test: /punycode/,
-      use: 'null-loader'
-    });
-
-    // Opciones adicionales de optimización y configuración
-    if (!isServer) {
-      config.resolve.fallback = {
-        fs: false,
-        path: false,
-      };
-    }
+    config.resolve.alias["@Utils"] = path.join(__dirname, "utils");
 
     return config;
   },
   images: {
-    domains: [],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3000',
+        pathname: '**',
+      },
+    ],
     loader: "default",
   },
   output: 'standalone',
