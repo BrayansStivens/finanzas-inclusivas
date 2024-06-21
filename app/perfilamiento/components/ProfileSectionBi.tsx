@@ -10,7 +10,7 @@ const ResultSectionBi: React.FC = () => {
       <section className="mb-4">
         <PageTitle title="Perfiles de mujeres potenciales beneficiarias de educación financiera" />
 
-        <div className="text-justify mt-0 mx-[10px] mt-[10px] mb-[0] gap-x-[25px] not-italic font-normal leading-[26px] text-justify">
+        <div className="text-justify mt-0 mx-[10px] mt-[10px] mb-[0] gap-x-[25px] not-italic font-medium leading-[26px] text-justify">
           <p className="mb-5">
             En este módulo, se presenta un tablero de POWER BI con filtros
             correspondientes a variables del enfoque interseccional, ya que esta
@@ -25,11 +25,11 @@ const ResultSectionBi: React.FC = () => {
             programa de educación financiera.
           </p>
           <p className="mb-5">
-            Es importante resaltar que la información que visualizará después de
-            utilizar los filtros o seleccionar un perfil dentro de la lista
+            Es importante resaltar que la información que se visualizará después
+            de utilizar los filtros o seleccionar un perfil dentro de la lista
             disponible proviene de la investigación cuantitativa; es decir
-            refleja la visión de las mujeres encuestadas durante la
-            investigación cuantitativa.
+            refleja la visión de las mujeres encuestadas durante dicho proceso
+            de investigación.
           </p>
         </div>
       </section>

@@ -49,7 +49,7 @@ async function Guia() {
           <PageTitle title={"Guía de formación"} />
           <section id="content" className="w-full flex flex-col gap-10">
             <div className="w-full">
-              <p className="w-full text-justify font-medium text-lg md:text-xl mb-3">
+              <p className="w-full text-justify font-medium mb-3">
                 En este módulo usted podrá descargar la ruta de formación
                 sugerida para el perfil que seleccionó en el módulo anterior, la
                 cual incluye la siguiente información: temas o contenidos
@@ -58,7 +58,7 @@ async function Guia() {
                 propuesta de materiales a desarrollar y estrategias pedagógicas
                 específicas para cada perfil seleccionado previamente.
               </p>
-              <p className="w-full text-justify font-medium text-lg md:text-xl mb-3">
+              <p className="w-full text-justify font-medium mb-3">
                 Es importante destacar que estas recomendaciones se elaboraron
                 considerando los resultados del proceso de investigación de
                 corte mixto, los lineamientos dados por Banca de las

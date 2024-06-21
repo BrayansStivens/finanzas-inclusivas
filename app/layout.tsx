@@ -8,8 +8,8 @@ import Footer from "@/components/ui/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Finanzas Inclusivas",
-  description: "app de finanzas",
+  title: "Finanzas para todas",
+  description: "app de finanzas para todas",
 };
 
 export default function RootLayout({

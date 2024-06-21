@@ -24,14 +24,14 @@ function Evaluacion() {
         <article id="evaluacion" className="flex flex-col gap-5 w-full">
           <PageTitle title={"Instrumento de evaluación"} />
           <section id="content" className="w-full">
-            <p className="text-justify mb-3">
+            <p className="text-justify font-medium  mb-3">
               En este módulo, se presenta una propuesta de instrumento para
               evaluar la efectividad de los programas de educación financiera
               desarrollados por las entidades del ecosistema financiero a través
               de la medición de cambios en conocimientos, actitudes, habilidades
               y comportamientos en educación financiera.
             </p>
-            <p className="text-justify mb-3">
+            <p className="text-justify font-medium  mb-3">
               El diseño metodológico de este instrumento se basa principalmente
               en los lineamientos proporcionados por el National Endowment for
               Financial Education en el NEFE FINANCIAL EDUCATION EVALUATION

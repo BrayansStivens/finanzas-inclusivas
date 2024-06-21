@@ -30,7 +30,7 @@ function RecomendacionesPage() {
             }
           />
           <section id="text" className="w-full">
-            <p className="w-full text-justify font-medium text-lg mb-3">
+            <p className="w-full text-justify font-medium mb-3">
               Como se mencionó previamente, la lógica de funcionamiento de esta
               herramienta se basa en el enfoque interseccional ya que variables
               como el nivel educativo, condición socioeconómica, edad, etnia,
@@ -39,7 +39,7 @@ function RecomendacionesPage() {
               la forma en como las mujeres acceden a los conocimientos en
               educación financiera y los apropian.
             </p>
-            <p className="w-full text-justify font-medium text-lg mb-3">
+            <p className="w-full text-justify font-medium mb-3">
               A continuación, se presenta un video que ofrece una explicación
               más detallada sobre qué es el enfoque interseccional, por qué es
               importante considerarlo durante los procesos de diseño y entrega
@@ -54,7 +54,7 @@ function RecomendacionesPage() {
             <br />
 
             <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-center px-5 md:px-44">
-              <p className="md:text-lg text-justify">
+              <p className="text-justify">
                 Si quieres saber más sobre el enfoque interseccional, te
                 invitamos a consultar los siguientes documentos:
               </p>
@@ -68,7 +68,7 @@ function RecomendacionesPage() {
                 height={30}
                 className="w-auto h-auto"
               />
-              <p className="md:text-lg text-justify">
+              <p className="text-justify">
                 Pérez, M. (2021). Interseccionalidad. En Susana B. Gamba y Tania
                 Diz, Nuevo diccionario de estudios de género y feminismos.
                 Buenos Aires (Argentina): Biblos.{" "}
@@ -90,7 +90,7 @@ function RecomendacionesPage() {
                 height={30}
                 className="w-auto h-auto"
               />
-              <p className="md:text-lg text-justify">
+              <p className=" text-justify">
                 Zeballosf-Cuathin, A. (2021). La interseccionalidad por razones
                 de diversidad étnica y cultural en Colombia. Revista Inciso,
                 23(2), 1–19.{" "}

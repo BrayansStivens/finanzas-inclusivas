@@ -39,7 +39,9 @@ export default async function HomeFeaturesPage() {
 
   return (
     <>
+    <div className="mt-5">
       <ModuleButton dataBtn={dataBtn} />
+    </div>
       <main className="flex justify-center px-4 py-5">
         <article id="home" className="flex flex-col gap-5">
           <HomeImageSection images={imagesCarousel} />

@@ -26,13 +26,13 @@ function RecomendacionesPage() {
           <PageTitle title={"Recomendaciones para el uso de la herramienta"} />
 
           <section id="text" className="w-full row-gap-10">
-            <p className="w-full text-justify mb-4">
+            <p className="w-full text-justify font-medium  mb-4">
               En este módulo encontrará un video tutorial a través del cual se
               darán orientaciones para el uso adecuado de la herramienta
               FINANZAS PARA TODAS y se explicarán los contenidos disponibles,
               filtros y otros detalles relevantes para usted como usuario.
             </p>
-            <p className="w-full text-justify mb-4">
+            <p className="w-full text-justify font-medium  mb-4">
               Es importante destacar que la lógica de funcionamiento de esta
               herramienta se basa en el enfoque interseccional y concretamente
               en variables como edad, etnia, condición socioeconómica,
@@ -45,7 +45,7 @@ function RecomendacionesPage() {
             </p>
           </section>
           <div className="mb-4">
-            <IframeVideoPage src="https://www.youtube-nocookie.com/embed/CDH1UEG3nbo?si=77CLKQwOoQf0xJoD" />
+            <IframeVideoPage src="https://www.youtube.com/embed/co0NAoGpW98?si=M-cs8-TrLcfpTMfB"/>
           </div>
         </article>
       </main>

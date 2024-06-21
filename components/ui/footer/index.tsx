@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       setShowFooter(true);
       setFooterText(
         `Este sitio web es posible gracias al apoyo del pueblo estadounidense a través de la 
-        Agencia de los Estados Unidos para el desarrollo Internacional (USAID). El contenido de este sitio es 
+        Agencia de los Estados Unidos para el Desarrollo Internacional (USAID). El contenido de este sitio es 
         responsabilidad exclusiva de Universidad Pontifica Bolivariana y Microempresas de Colombia y no refleja 
         necesariamente las opiniones de USAID o del gobierno de los Estados Unidos.`
       );
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     } else {
       setShowFooter(true);
       setFooterText(
-        "Para comentarios y sugerencias escribir al correo finanzasparatodas@upb.edu.co"
+      "Para comentarios y sugerencias sobre el funcionamiento de esta herramienta, lo invitamos a escribir a finanzasparatodas@upb.edu.co."
       );
     }
   }, [pathname]);

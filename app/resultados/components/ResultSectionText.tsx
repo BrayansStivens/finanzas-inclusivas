@@ -4,7 +4,7 @@ import TableTopics, { Topics } from "../../../components/ui/TableTopics/index";
 const ResultSectionText: React.FC<{ data: Topics[] }> = ({ data }) => {
   return (
     <section className="p-4" id="buenas_practicas">
-      <p className="text-left my-3 mx-4 list-disc list-inside">
+      <p className="text-left font-medium my-3 mx-4 list-disc list-inside">
         <strong>Investigación cualitativa:</strong> se aplicó una entrevista
         semiestructurada a los Referentes de educación financiera, género,
         diversidad e inclusión de siete (7) entidades del ecosistema financiero
@@ -16,7 +16,7 @@ const ResultSectionText: React.FC<{ data: Topics[] }> = ({ data }) => {
         prestadores de servicios financieros al proceso tanto de diseño como de
         desarrollo de esta herramienta.
       </p>
-      <p className="text-left my-3 mx-4 list-disc list-inside">
+      <p className="text-left font-medium my-3 mx-4 list-disc list-inside">
         Los resultados de esta parte del proceso de investigación se presentarán
         a continuación, dentro de un consolidado de buenas prácticas para el
         diseño y entrega de programas de educación financiera con enfoque de

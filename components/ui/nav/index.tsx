@@ -42,8 +42,8 @@ const Nav: React.FC = () => {
               <Image
                 src="/assets/logo/fina_mujer_logo.png"
                 alt="logo fina mujer"
-                width={150}
-                height={50}
+                width={280}
+                height={180}
                 priority
                 className="w-auto h-auto"
               />
@@ -52,8 +52,8 @@ const Nav: React.FC = () => {
               <Image
                 src="/assets/logo/icon.svg"
                 alt="icono para móviles"
-                width={50}
-                height={50}
+                width={180}
+                height={180}
                 priority
                 className="w-auto h-auto"
               />

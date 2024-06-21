@@ -18,7 +18,7 @@ const AuthFeaturesPage: React.FC = async () => {
   } = await getSectorData();
 
   return (
-    <main>
+    <main className="flex justify-center px-4 py-5">
       <article id="auth" className="flex flex-col gap-5">
         <AuthSectorCard {...sectorData} />
       </article>
